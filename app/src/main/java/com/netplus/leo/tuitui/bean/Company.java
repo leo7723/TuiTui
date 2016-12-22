@@ -7,10 +7,11 @@ import com.hannesdorfmann.mosby.mvp.MvpView;
  */
 
 public class Company implements MvpView {
+    private int id;
     private  String icon;
     private String name;
     private String companyName;
-    private String jobDescribsion;
+    private String jobDescripsion;
     Company(){}
     public String getIcon() {
         return icon;
@@ -37,10 +38,18 @@ public class Company implements MvpView {
     }
 
     public String getJobDescribsion() {
-        return jobDescribsion;
+        return jobDescripsion;
     }
 
     public void setJobDescribsion(String jobDescribsion) {
-        this.jobDescribsion = jobDescribsion;
+        this.jobDescripsion = jobDescribsion;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
