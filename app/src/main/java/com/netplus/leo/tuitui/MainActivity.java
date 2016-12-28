@@ -43,13 +43,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
+
         setSupportActionBar(toolbar);
         fab.setOnClickListener(this);
         for (int i = 0, size = arcLayout.getChildCount(); i < size; i++) {
             arcLayout.getChildAt(i).setOnClickListener(this);
         }
         setDefaultFragment();
-        toolbar.setTitle("Company");
+
     }
 
     @Override
@@ -76,11 +77,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.fab:onFabClick(view);break;
             case R.id.company_fragment_button: setFragment(new CompanyFragment());
-                hideMenu();fab.setSelected(!fab.isSelected()); break;
+                hideMenu();fab.setSelected(!fab.isSelected());toolbar.setTitle("腿推"); break;
             case R.id.datui_fragment_button: setFragment(new DatuiFragment());
-                hideMenu();fab.setSelected(!fab.isSelected()); break;
+                hideMenu();fab.setSelected(!fab.isSelected()); toolbar.setTitle("学长信息");break;
             case R.id.personal_fragment_button: setFragment(new PersenalFragment());
-                hideMenu();fab.setSelected(!fab.isSelected()); break;
+                hideMenu();fab.setSelected(!fab.isSelected()); toolbar.setTitle("个人信息");break;
         }
 
     }

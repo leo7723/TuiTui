@@ -1,18 +1,19 @@
 package com.netplus.leo.tuitui.bean;
 
-import com.hannesdorfmann.mosby.mvp.MvpView;
 
 /**
  * Created by leo on 2016/11/28.
  */
 
-public class Company implements MvpView {
+public class Company  {
     private int id;
     private  String icon;
     private String name;
     private String companyName;
     private String jobDescripsion;
-    Company(){}
+    public Company(){
+        icon="XXXXXXXXXXXXXXXxx";
+    }
     public String getIcon() {
         return icon;
     }

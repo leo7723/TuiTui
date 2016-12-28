@@ -7,8 +7,64 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <!-- toolbar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="DividerLine">
+        <item name="android:background">@color/divider_line_color</item>
+    </style>
+
+    <style name="DividerLine.PersonalPage">
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="DividerLine.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_line_height</item>
+    </style>
+
+    <style name="DividerLine.Vertical">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/divider_line_height</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextAppearance"/>
+    <style name="TextAppearance.Large">
+        <item name="android:textSize">@dimen/textsize_large</item>
+    </style>
+
+    <style name="TextAppearance.Large.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="TextAppearance.Normal">
+        <item name="android:textSize">@dimen/textsize_normal</item>
+    </style>
+
+    <style name="TextAppearance.Normal.Blue">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="TextAppearance.Normal.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Normal.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="TextAppearance.Normal.Largest">
+        <item name="android:textSize">@dimen/textsize_largest</item>
+    </style>
+
 </resources>
